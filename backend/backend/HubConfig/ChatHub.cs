@@ -32,7 +32,6 @@ namespace backend.HubConfig
             await DisplayOnlineUsers();
         }
 
-
         public async Task RecieveMessage(MessageDto message)
         {
             await Clients.Groups("Come2Chat").SendAsync("NewMessage", message);
